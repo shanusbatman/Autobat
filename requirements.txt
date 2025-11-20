@@ -1,0 +1,2 @@
+# AutoBat has no external library requirements
+# Python 3 built-in modules only
