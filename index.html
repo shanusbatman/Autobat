@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,4 +53,145 @@
       text-decoration: none;
       margin-left: 25px;
       font-size: 16px;
-      trans
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4fd1ff;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .hero h2 {
+      font-size: 55px;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg,#4fd1ff,#8f5bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 750px;
+      margin-bottom: 30px;
+      color: #dcdcdc;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      background: #4fd1ff;
+      color: #000;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #37b8e6;
+      transform: scale(1.05);
+    }
+
+    /* Features */
+    .features {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #1b1b1b;
+      padding: 30px;
+      border-radius: 12px;
+      transition: 0.3s;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      background: #242424;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px;
+      margin-top: 60px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="fade">
+    <h1>AutoBat</h1>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <section class="hero fade">
+    <h2>Automate Your Scripts Effortlessly</h2>
+    <p>Create and run BAT automation scripts in seconds. Lightweight, powerful, and built for everyone — beginners to advanced users.</p>
+    <a class="btn" href="Autobat.py" download>Download AutoBat</a>
+  </section>
+
+  <section class="features fade" id="features">
+    <h2>Why Choose AutoBat?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>⚡ Fast Automation</h3>
+        <p>Instantly generate Windows BAT scripts with a simple, guided interface.</p>
+      </div>
+
+      <div class="card">
+        <h3>🧠 Smart Execution</h3>
+        <p>Runs commands safely with built-in checks to prevent common script errors.</p>
+      </div>
+
+      <div class="card">
+        <h3>💻 Lightweight</h3>
+        <p>No installation needed. Download and run on any Windows machine.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔒 Safe</h3>
+        <p>Designed to avoid harmful commands and keep your system secure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero fade" id="download" style="height: auto; padding: 80px 20px;">
+    <h2>Download AutoBat</h2>
+    <p>Get the full version below — completely free.</p>
+    <a class="btn" href="Autobat.py" download>Download Now</a>
+  </section>
+
+  <div class="footer fade">
+    AutoBat © 2025 — Created by Shanusbatman
+  </div>
+
+</body>
+</html>
